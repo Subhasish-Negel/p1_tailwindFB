@@ -6,11 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Facebook - log in or sign up</title>
 </head>
 <body>
-    <div class="container">
-        <div class="left"></div>
+    <div class="container mt-48 flex mx-auto">
+        <div class="left">
+            <img class="w-60" src="media/logo.svg" alt="">
+            <p>Facebook helps you connect and share with the people in your life.</p>
+        </div>
+
+        <div class="right flex flex-col">
+            <input type="text" placeholder="Email address or phone">
+            <input type="password" placeholder="Password">
+            <button class="btn">Log in</button>
+            <span>Forgotten password</span>
+            <hr>
+            <button class="btn">Create Account</button>
+        </div>
     </div>
 </body>
 </html>
