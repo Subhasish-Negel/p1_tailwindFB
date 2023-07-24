@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="media/fb.ico" type="image/ico">
     <title>Facebook - log in or sign up</title>
-</head>
-<body>
-    <div class="container mt-48 flex mx-auto">
-        <div class="left">
-            <img class="w-60" src="media/logo.svg" alt="">
-            <p>Facebook helps you connect and share with the people in your life.</p>
-        </div>
+  </head>
 
-        <div class="right flex flex-col">
-            <input type="text" placeholder="Email address or phone">
-            <input type="password" placeholder="Password">
-            <button class="btn">Log in</button>
-            <span>Forgotten password</span>
-            <hr>
-            <button class="btn">Create Account</button>
-        </div>
+  <body class="bg-gray-100">
+    <div class="container mt-32 flex mx-auto justify-center items-center">
+      <div class="left w-1/3 mx-14">
+        <img class="w-80" src="media/logo.svg" alt="" />
+        <p class="text-3xl mx-8">
+          Facebook helps you connect and share with the people in your life.
+        </p>
+      </div>
+
+      <div class="right flex flex-col bg-white px-4 py-3 rounded-lg w-1/4 text-lg">
+        <input class="rounded-2xl px-3 h-12 my-1 border border-gray-300 outline-blue-500" type="text" placeholder="Email address or phone number" />
+        <input class="rounded-2xl px-3 h-12 my-1 border border-gray-300 outline-blue-500" type="password" placeholder="Password"/>
+        <button class="bg-blue-600 hover:bg-blue-700 text-white my-2 rounded-2xl py-2 text-lg font-bold active:bg-blue-800">Log in</button>
+        <span class="text-blue-600 text-sm my-2 cursor-pointer text-center hover:underline">Forgotten password?</span>
+        <hr />
+        <button class="bg-green-500 hover:bg-green-600 text-white my-6 rounded-2xl py-2 text-md font-bold px-4 w-fit mx-auto active:bg-green-700">Create new account</button>
+      </div>
     </div>
-</body>
+  </body>
 </html>
